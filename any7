@@ -1,0 +1,2 @@
+# Check if any number in the list is equal to 7
+return any(num == 7 for num in nums)
