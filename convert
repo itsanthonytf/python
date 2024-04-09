@@ -1,0 +1,10 @@
+def convert_temp(unit_in, unit_out, temp):
+    if unit_in not in ["c", "f"] or unit_out not in ["c", "f"]:
+        return f"Invalid unit {unit_in}" if unit_in not in ["c", "f"] else f"Invalid unit {unit_out}"
+    
+    if unit_in == "c" and unit_out == "f":
+        return (temp * 9/5) + 32
+    elif unit_in == "f" and unit_out == "c":
+        return (temp - 32) * 5/9
+    else:
+        return temp
